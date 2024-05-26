@@ -1,0 +1,16 @@
+✨ Attempting to apply the following manifest:
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod
+  labels:
+    app: demo
+    run: demo
+spec:
+  containers:
+  - name: demo-container
+    image: gcr.io/devops-55250-421307/demo:v2.0.0
+    ports:
+    - name: HTTP
+      containerPort: 8000
